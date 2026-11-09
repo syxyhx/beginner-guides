@@ -4,6 +4,10 @@
 
 ## 2026-11-10
 
+### 变更
+
+- **删除归档仓库 `syxyhx/cloud-guide`**。内容与 PDF 早已并入本仓库 [`guides/02-server-dsh/`](guides/02-server-dsh/)（PDF 逐字节相同），旧地址不再重定向。
+
 ### 修正
 
 - **02 分册：更正百炼与 DeepSeek 官方 API 的关系**。4.4 主线走的是 DeepSeek 官方端点（`api.deepseek.com` + `deepseek-flash`），百炼只是末尾提到的「任意 OpenAI 兼容端点」之一，原先写成「4.4 用的就是百炼密钥」会让人只换 Key 导致报错。现已补全 `LLM_BASE_URL` 与 `LLM_MODEL` 两项必须同步修改的参数，03 分册同步更新。
@@ -18,7 +22,7 @@
 
 ### 变更
 
-- **两个仓库合并为本仓库 `beginner-guides`**，原 `github-guide`（3 star）作为合并基线，原 `cloud-guide` 的内容并入。旧地址会自动重定向。
+- **两个仓库合并为本仓库 `beginner-guides`**，原 `github-guide`（3 star）作为合并基线，原 `cloud-guide` 的内容并入。`cloud-guide` 已于 2026-11-10 删除，对应内容见 [`guides/02-server-dsh/`](guides/02-server-dsh/)。
 - 目录重整为 `guides/NN-slug/` 结构，两篇已有教程的 PDF 移入各自目录，根目录不再堆文件。
 - 重写顶层 `README.md`：改为三篇教程的统一导航，含「不知道怎么选」的处境对照表与阅读顺序。
 
