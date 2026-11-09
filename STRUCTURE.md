@@ -6,7 +6,7 @@
 
 ```
 beginner-guides/
-├── README.md                     仓库门面：三份教程总览、阅读顺序、仓库结构
+├── README.md                     仓库门面：三份教程总览、阅读顺序、阅读约定
 ├── LICENSE                       MIT 许可证
 ├── CONTRIBUTING.md               贡献指南：提什么、怎么提、审核标准
 ├── CODE_OF_CONDUCT.md            行为准则
