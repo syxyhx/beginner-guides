@@ -23,7 +23,7 @@ body:
     id: location
     attributes:
       label: 位置
-      description: 优先写章节号（如「4.6 进程守护」）。要写页码请注明是阅读器显示的页号——PDF 页脚页码比阅读器页号小 2~3 页，照页脚填会定位错
+      description: 优先写章节号（如「4.6 进程守护」）。要写页码请注明是阅读器显示的页号——PDF 页脚页码比阅读器页号小 3 页，照页脚填会定位错
       placeholder: 4.6 / 阅读器第 15 页
     validations:
       required: true
