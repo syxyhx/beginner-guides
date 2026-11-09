@@ -28,7 +28,7 @@ beginner-guides/
     │   └── GitHub新手学生使用指南.pdf
     ├── 02-server-dsh/
     │   ├── README.md
-    │   ├── errata.md             本版勘误（dsh PATH、环境变量、空白页）
+    │   ├── errata.md             本版勘误清单（dsh 命令、环境变量、版本与价格）
     │   └── 服务器选购搭建与dsh接入完全手册.pdf
     └── 03-bailian-api/
         ├── README.md

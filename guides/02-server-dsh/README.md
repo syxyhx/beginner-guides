@@ -6,7 +6,7 @@
 
 > 本目录下的 PDF 文件名固定为 `服务器选购搭建与dsh接入完全手册.pdf`，与仓库其他位置的引用一一对应，改名会导致链接失效。
 
-> **动手前先看 [errata.md](errata.md)**：本版 PDF 有 2 处会让部署直接失败的硬伤——dsh 装完不在 PATH（第 4 部分从 4.3 起全部卡住）、`/etc/environment` 里的变量 systemd 读不到；另有 1 页多余的空白页。文件里有改法和一条六步验证路径。
+> **动手前先看 [errata.md](errata.md)**：本版 PDF 已查出 **4 处会让部署直接失败、1 处会让手机访问失败**——dsh 装完不在 PATH、`dsh plugin` 缺 `--profile`、`dsh run` 根本不是子命令、`/etc/environment` 对 systemd 无效，以及 4.7 的所有远程访问方案都缺 `--trusted-host`。另有 Node 版本不匹配、两处价格数据和 1 页空白页。文件里逐条给了改法和一条十步验证路径。
 
 ---
 
