@@ -24,6 +24,8 @@
 - **PDF（推荐）** —— 排版已定格，带目录页码、代码块不跨页断开，适合从头读到尾，也适合打印。
 - **分册 README** —— 章节速览、快速翻阅用的要点索引、勘误记录，适合「我记得看到过但忘了在哪」。
 
+目录怎么分、命名规则、加一篇新教程要动哪些文件，见 [STRUCTURE.md](STRUCTURE.md)。
+
 ---
 
 ## 不知道从哪篇开始
@@ -36,34 +38,6 @@
 | 想让程序一直跑着，不想开着自己的电脑 | **02**，第 1、2 部分讲怎么买，第 4 部分讲怎么装 |
 | 只想尽快拿到一个 API Key 试试大模型 | **03**，13 页、15 分钟，全程不写代码 |
 | 三个都想做 | 顺序无所谓。**02 和 03 共用同一个阿里云账号**（实名做一次即可），但和 01 的 GitHub 账号没有任何关系，两套学生认证彼此独立、各做各的 |
-
----
-
-## 仓库结构
-
-```
-beginner-guides/
-├── README.md                    你正在看的这一份
-├── LICENSE                      MIT
-├── CONTRIBUTING.md              怎么提勘误、怎么加新教程
-├── CODE_OF_CONDUCT.md           行为准则
-├── CHANGELOG.md                 更新记录
-├── STRUCTURE.md                 目录结构说明与命名规范
-├── .github/                     Issue 模板、PR 模板
-└── guides/
-    ├── README.md                教程总索引（含每篇的勘误入口）
-    ├── 01-github-beginner/
-    │   ├── README.md            分册导读
-    │   └── GitHub新手学生使用指南.pdf
-    ├── 02-server-dsh/
-    │   ├── README.md
-    │   └── 服务器选购搭建与dsh接入完全手册.pdf
-    └── 03-bailian-api/
-        ├── README.md
-        └── 阿里云百炼学生券与API密钥获取教程.pdf
-```
-
-新增一篇教程的完整规范见 [STRUCTURE.md](STRUCTURE.md)。
 
 ---
 
