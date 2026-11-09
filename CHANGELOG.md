@@ -11,7 +11,8 @@
 ### 修正
 
 - **02 分册：更正百炼与 DeepSeek 官方 API 的关系**。4.4 主线走的是 DeepSeek 官方端点（`api.deepseek.com` + `deepseek-flash`），百炼只是末尾提到的「任意 OpenAI 兼容端点」之一，原先写成「4.4 用的就是百炼密钥」会让人只换 Key 导致报错。现已补全 `LLM_BASE_URL` 与 `LLM_MODEL` 两项必须同步修改的参数，03 分册同步更新。
-- **新增 [`guides/02-server-dsh/errata.md`](guides/02-server-dsh/errata.md)**：记录本版 PDF 的两处硬伤——dsh 装完不在 PATH（致第 4 部分从 4.3 起全部不可用）、`/etc/environment` 的变量 systemd 读不到；另记末页空白页。含正确改法与六步验证路径。`guides/README.md` 的勘误记录表同步登记。
+- **新增 [`guides/02-server-dsh/errata.md`](guides/02-server-dsh/errata.md)**，按源码级核对扩到 10 条：dsh 装完不在 PATH、`dsh plugin` 缺 `--profile`（且 `--profile` 必须紧跟 `plugin`，否则被透传给 pnpm）、`dsh run` 不是子命令（应为 `dsh --profile headless`）、`/etc/environment` 对 systemd 无效、4.7 缺 `--trusted-host`、`LLM_API_KEY` 变量名疑点、Node 版本与 latest 不匹配、价格数字偏高、「v4-pro 已并入 Flash」不成立、末页空白。含逐条改法与十步验证路径；`guides/README.md` 的勘误记录表同步登记 8 行。
+- 顶层 README 与 `guides/README.md` 的 02 页数标注为「21（含 1 页空白）」，序号状态标为「已发布，有勘误」。
 - 行为准则：删去仓库未启用的 Discussions 和实际不可用的「发邮件」渠道。
 - Issue 模板：位置一栏改为以章节号为主，并注明 PDF 页脚页码比阅读器页号小 2~3 页。
 - 01 分册：说明表 5 是截至 2026 年 10 月的作者进度快照，避免与第二章「必须装系统 Git 并进 PATH」被误读为矛盾。
