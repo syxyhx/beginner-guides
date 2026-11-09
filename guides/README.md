@@ -41,6 +41,8 @@
 
 | 日期 | 教程 | 位置 | 内容 |
 |---|---|---|---|
-| — | — | — | 暂无 |
+| 2026-11-10 | 02 | 4.2 / 4.3 / 4.6 | dsh 装完不在 PATH，第 4 部分从 4.3 起全部不可用。改法与六步验证见 [errata.md](02-server-dsh/errata.md) |
+| 2026-11-10 | 02 | 4.4 方式 B | 写进 `/etc/environment` 的变量 systemd 读不到，需改用 `EnvironmentFile` |
+| 2026-11-10 | 02 | 物理第 21 页 | 末页整页空白，是导出多余的页，打印会白废一张 |
 
 发现错误请提 [Issue](https://github.com/syxyhx/beginner-guides/issues/new/choose)，选「教程勘误」。

@@ -28,6 +28,7 @@ beginner-guides/
     │   └── GitHub新手学生使用指南.pdf
     ├── 02-server-dsh/
     │   ├── README.md
+    │   ├── errata.md             本版勘误（dsh PATH、环境变量、空白页）
     │   └── 服务器选购搭建与dsh接入完全手册.pdf
     └── 03-bailian-api/
         ├── README.md
@@ -91,7 +92,7 @@ guides/NN-slug/
 | 路径 | 用途 |
 |---|---|
 | `guides/NN-slug/assets/` | 该篇教程的配图、示例文件、可下载的配置模板 |
-| `guides/NN-slug/errata.md` | 单篇勘误条目多到 README 放不下时，独立成文件 |
+| `guides/NN-slug/errata.md` | 该篇的独立勘误文件——**已启用**，见 `guides/02-server-dsh/errata.md` |
 | `examples/` | 跨教程共用的示例代码（如多篇都用到的 `docker-compose.yml`） |
 
 ## 不放进仓库的东西
