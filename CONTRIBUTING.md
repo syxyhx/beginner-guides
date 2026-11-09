@@ -55,7 +55,7 @@ docs: 补充 Issue 模板
 
 目录、文件、README 结构有硬性要求，详见 [STRUCTURE.md](STRUCTURE.md)。要点：
 
-1. 目录名 `guides/NN-slug/`，`NN` 两位数字，按阅读顺序递增，不跳号、不复用。
+1. 目录名 `guides/NN-slug/`，`NN` 两位数字，从 `01` 起按阅读顺序递增；编号一经分配不再复用。
 2. 目录内必须有 `README.md`（分册导读）和**唯一的 PDF 主文件**。
 3. PDF 文件名与分册 README 里写的名字**必须完全一致**，顶层 `README.md` 和 `guides/README.md` 的两张表要同步加一行。
 4. 更新 `CHANGELOG.md`。

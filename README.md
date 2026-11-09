@@ -85,7 +85,7 @@ beginner-guides/
 - 提 [Issue](https://github.com/syxyhx/beginner-guides/issues/new/choose) —— 选「教程勘误」，写清哪一篇、第几页或第几节、原文是什么、哪里不对。
 - 直接改 —— 见 [CONTRIBUTING.md](CONTRIBUTING.md)，纯文档类修改欢迎直接提 PR。
 
-勘误确认后会记进对应分册的 README，并尽快出新版 PDF。
+勘误确认后会记进 [`guides/README.md`](guides/README.md) 底部的勘误记录表，并尽快出新版 PDF。
 
 ---
 
