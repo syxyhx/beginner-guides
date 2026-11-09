@@ -1,1 +1,18 @@
+# Office 临时锁文件
 ~$*
+
+# 系统垃圾
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+
+# 本地草稿与导出中间产物（注意：不要提交含真实密钥、真实 IP 的调试记录）
+*.tmp
+*.bak
+draft/
+scratch/

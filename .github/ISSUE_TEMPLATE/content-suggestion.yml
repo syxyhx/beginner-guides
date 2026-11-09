@@ -1,0 +1,42 @@
+name: 内容建议
+description: 希望补充某节内容，或提议新增一篇教程
+title: "[建议] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        提之前先看一下 [STRUCTURE.md](https://github.com/syxyhx/beginner-guides/blob/main/STRUCTURE.md)，
+        确认这个内容适合放在本仓库——这里的定位是「从零开始的实操教程」，不是资料汇编。
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: 建议类型
+      options:
+        - 补充某篇教程的某一节
+        - 新增一篇教程
+        - 仓库结构调整
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: 想补什么
+      description: 具体到「哪篇、哪一节、补什么」，越具体越好
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: 为什么值得补
+      description: 卡在什么地方了？现有的哪份资料没讲清楚？
+    validations:
+      required: true
+
+  - type: textarea
+    id: outline
+    attributes:
+      label: 大概提纲（可选）
+      render: text
