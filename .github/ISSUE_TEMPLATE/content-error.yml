@@ -1,0 +1,67 @@
+name: 教程勘误
+description: 教程里有错、过期，或者某一步照着做走不通
+title: "[勘误] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢帮忙抓错。请尽量填全，尤其是「位置」和「原文」，方便定位。
+
+  - type: dropdown
+    id: guide
+    attributes:
+      label: 哪一篇教程
+      options:
+        - 01 · GitHub 新手学生使用指南
+        - 02 · 服务器选购搭建与 dsh 接入完全手册
+        - 03 · 阿里云百炼学生券与 API 密钥获取教程
+        - 其他 / 仓库本身（README、链接等）
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: 位置
+      description: 页码或章节号，例如「第 12 页」或「4.6 进程守护」
+      placeholder: 第 12 页 / 4.6
+    validations:
+      required: true
+
+  - type: textarea
+    id: original
+    attributes:
+      label: 原文是怎么写的
+      description: 直接复制那句话或那条命令
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 哪里不对
+      description: 是事实错了、界面变了、还是照着执行报错？报错请贴**完整**输出
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 建议怎么改（可选）
+      render: text
+
+  - type: input
+    id: env
+    attributes:
+      label: 你操作时的环境（可选）
+      placeholder: Windows 11 / Ubuntu 22.04 / macOS 15；浏览器或客户端版本
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认
+      options:
+        - label: 我贴出的内容里不含真实密钥、真实服务器 IP 或他人的个人信息
+          required: true

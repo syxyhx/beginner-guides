@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 提 Issue 之前先看贡献指南
+    url: https://github.com/syxyhx/beginner-guides/blob/main/CONTRIBUTING.md
+    about: 说明什么内容能提、提之前要准备什么、审核标准是什么
+  - name: 想直接改文档
+    url: https://github.com/syxyhx/beginner-guides/blob/main/CONTRIBUTING.md
+    about: 错别字、断链、格式调整这类改动，欢迎直接提 PR
