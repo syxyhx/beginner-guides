@@ -51,6 +51,7 @@
 | 18 | 4.4 | 「deepseek-v4-pro 已并入 V4.1-Flash 计费」不成立，v4-pro 是独立模型独立计价 | 改为「独立计费，不在 Flash 的价格里」 |
 | 19 | 附录 A | 升级命令 `npm update -g` 缺 sudo，且会升到 latest 破坏版本锁定 | 改为 `sudo npm install -g @deepseek-ai/dsh@目标版本号` |
 | 20 | 4.11 | 排查表里「外网不通」那行还写着「临时直连只放行自己的公网 IP」，而直连方案在 4.7 已判为不可行 | 改为「按 4.7 打通 Tailscale 或 Caddy——dsh 不支持端口直连，别试」；同时补「command not found」与「pnpm not found」两条排查行 |
+| 21 | 4.4 / 附录 B | 「方式 B：环境变量（适合 headless / 脚本）」名不副实——新版只放端点、不放 Key，headless 的 Key 也是从界面配的；Q2 的 `npx web` 不是有效命令；Q5 说「把 3080 端口无认证暴露公网」与 dsh 拒绝通配地址矛盾 | 改为「方式 B：覆盖端点（环境变量，可选）」、「`npx @deepseek-ai/dsh`」、「通过反代无认证地开放给公网」 |
 
 ### 排版
 
