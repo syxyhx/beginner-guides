@@ -50,6 +50,7 @@
 | 17 | 4.6 坑点 5 | 「systemd 不继承 PATH，写 `dsh web` 会启动失败」——结论对，理由不准：systemd 有编译期默认搜索路径（通常含 `/usr/local/bin`） | 改为「用编译期固定目录，不读 shell 的 PATH 与 `.bashrc`，发行版间不一致，所以写绝对路径」 |
 | 18 | 4.4 | 「deepseek-v4-pro 已并入 V4.1-Flash 计费」不成立，v4-pro 是独立模型独立计价 | 改为「独立计费，不在 Flash 的价格里」 |
 | 19 | 附录 A | 升级命令 `npm update -g` 缺 sudo，且会升到 latest 破坏版本锁定 | 改为 `sudo npm install -g @deepseek-ai/dsh@目标版本号` |
+| 20 | 4.11 | 排查表里「外网不通」那行还写着「临时直连只放行自己的公网 IP」，而直连方案在 4.7 已判为不可行 | 改为「按 4.7 打通 Tailscale 或 Caddy——dsh 不支持端口直连，别试」；同时补「command not found」与「pnpm not found」两条排查行 |
 
 ### 排版
 

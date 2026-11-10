@@ -17,7 +17,7 @@
 - **会让部署直接失败 7 处**：npm 全局 prefix 指向错误导致 `dsh` 不在 PATH；4.2 未说明要 root；`npm install -g @deepseek-ai/dsh` 不锁版本（latest 要求 Node ≥ 24.9，与教程的 22.19 冲突）；缺 pnpm（`dsh plugin` 硬依赖）；环境变量名 `LLM_API_KEY` 等在 dsh 里不存在且 `/etc/environment` 对 systemd 无效；root 试启动导致 DSH_HOME 属主错误；4.9 的 `HarnessAgent` / `run_task` 不存在。
 - **跑不通或方案不可行 5 处**：`dsh plugin` 缺 `--profile`（且必须紧跟 `plugin` 后）；`dsh run` 不是子命令（`run` 会被当作 profile 名）；4.7 缺 `--trusted-host`；1.4 未说明 Caddy 要放行 80 / 443；「公网 IP + 端口直连」物理上无法实现（dsh 拒绝 `0.0.0.0`，公网 IP 是 NAT 映射），已删除该行。
 - **会卡住 4 处**：4.5 让读者在自己电脑上访问 `127.0.0.1`（改为 `curl -I` + SSH 隧道）；4.4 方式 A 排在 4.5 启动之前；1.6 的 `adduser` 是交互式（改非交互）；4.10 只给备份不给恢复（补恢复命令与属主处理）。
-- **表述与数据 3 处**：4.6 关于 systemd 查找 PATH 的解释；「deepseek-v4-pro 已并入 V4.1-Flash 计费」不成立；附录 A 升级命令缺 `sudo` 且会破坏版本锁定。
+- **表述与数据 4 处**：4.6 关于 systemd 查找 PATH 的解释；「deepseek-v4-pro 已并入 V4.1-Flash 计费」不成立；附录 A 升级命令缺 `sudo` 且会破坏版本锁定；4.11 排查表残留「临时直连」表述（与 4.7 删除直连方案矛盾），已改写并补两条新增故障行。
 - **排版**：4.6 单元文件首行 `Description` 与 `After` 粘连已分行；4.7 标题同步改为「两种可行方式」。
 - 顶层 README 与 `guides/README.md` 的 02 页数标注为「24（含 1 页空白）」，状态改为「已发布」。
 - 行为准则：删去仓库未启用的 Discussions 和实际不可用的「发邮件」渠道。
